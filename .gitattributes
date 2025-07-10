@@ -1,0 +1,4 @@
+models/*.pt filter=lfs diff=lfs merge=lfs -text
+assets/*.mp4 filter=lfs diff=lfs merge=lfs -text
+output/*.avi filter=lfs diff=lfs merge=lfs -text
+output/*.mp4 filter=lfs diff=lfs merge=lfs -text
