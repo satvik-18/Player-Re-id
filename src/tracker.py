@@ -64,9 +64,9 @@ def tracking(video_path):
         print(f"[DeepSort INPUT] Count: {len(filtered_detections)} | Embeddings: {len(embeddings)}")
 
         tracked = tracker.update_tracks(filtered_detections, embeds= embeddings, frame = img)
-        print(f"[FRAME] Tracked boxes: {sum(tr.is_confirmed() for tr in tracked)}") 
+        
         for i,tr in enumerate(tracked):
-            print(f"[TRACKER] Confirmed: {tr.is_confirmed()} | Track ID: {tr.track_id}")
+           
 
             if not tr.is_confirmed():
                 continue
@@ -89,7 +89,7 @@ def tracking(video_path):
                     tr.features = [current_embedding]
 
                 tr.averaged_embedding = np.mean(tr.features, axis=0)
-                print(f"[TRACK #{tid}] Averaged embedding norm: {np.linalg.norm(tr.averaged_embedding):.4f} | History length: {len(tr.features)}")
+                
 
             c_id = tr.get_det_class()
             if(c_id == None):
