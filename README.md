@@ -1,7 +1,7 @@
 
 # 🚀 Player Re-Identification & Tracking in Sports Videos
 
-### **AI Internship Induction Task Submission**
+### **AI Internship Task Submission**
 
 This project presents a robust solution for **player re-identification and tracking in sports footage**, combining state-of-the-art computer vision techniques: **YOLOv8** for detection, **OSNet** for appearance-based feature extraction, and **Deep SORT** for consistent multi-object tracking.
 
